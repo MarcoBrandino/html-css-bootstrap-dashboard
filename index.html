@@ -19,7 +19,7 @@
                 <button class="navbar-toggler border-light-subtle" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon bg-white"></span>
+                    <span class="navbar-toggler-icon bg-white text-success"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -50,17 +50,19 @@
             <div class="row">
                 <div class="col-md-12 col-lg-9">
                     <table class="table table-striped caption-top">
-                        <caption class="justify-content-between">
+                        <caption class="">
                             <span class="fs-3">Catalogo Libri</span>
-                            <button class="justify-content-end">Aggiungi Libro</button>
+                            <button class="text-white bg-primary border-white rounded px-2 py-1">
+                                Aggiungi Libro</button>
                         </caption>
 
+                        <!-- Intestazione Tabella-->
                         <thead>
                             <tr>
                                 <th class="col-6">Titolo</th>
                                 <th class="d-none d-sm-none d-md-block">Data Prestito</th>
                                 <th class="">Stato</th>
-                                <th class="">Azioni</th>
+                                <th class="text-center">Azioni</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -69,7 +71,7 @@
                                 <td scope="row">I pilastri della terra</td>
                                 <td class="d-none d-sm-none d-md-block">-</td>
                                 <td><span class="bg-success text-white rounded p-1">Disponibile</span></td>
-                                <td>
+                                <td class="text-center">
                                     <button class="btn border border-dark-subtle me-1"><i
                                             class="bi bi-pencil-fill"></i></button>
                                     <button class="btn border border-dark-subtle"><i
@@ -81,7 +83,7 @@
                                 <td scope="row">I promessi sposi</td>
                                 <td class="d-none d-sm-none d-md-block">-</td>
                                 <td><span class="bg-success text-white rounded p-1">Disponibile</span></td>
-                                <td>
+                                <td class="text-center">
                                     <button class="btn border border-dark-subtle me-1"><i
                                             class="bi bi-pencil-fill"></i></button>
                                     <button class="btn border border-dark-subtle"><i
@@ -93,7 +95,7 @@
                                 <td scope="row">Il signore degli anelli</td>
                                 <td class="d-none d-sm-none d-md-block">18/10/2023</td>
                                 <td><span class="bg-warning text-white rounded p-1">In Prestito</span></td>
-                                <td>
+                                <td class="text-center">
                                     <button class="btn border border-dark-subtle me-1"><i
                                             class="bi bi-pencil-fill"></i></button>
                                     <button class="btn border border-dark-subtle"><i
@@ -105,7 +107,7 @@
                                 <td scope="row">Harry Potter e la pietra filosofale</td>
                                 <td class="d-none d-sm-none d-md-block">-</td>
                                 <td><span class="bg-success text-white rounded p-1">Disponibile</span></td>
-                                <td>
+                                <td class="text-center">
                                     <button class="btn border border-dark-subtle me-1"><i
                                             class="bi bi-pencil-fill"></i></button>
                                     <button class="btn border border-dark-subtle"><i
@@ -117,7 +119,7 @@
                                 <td scope="row">Il codice Da Vinci</td>
                                 <td class="d-none d-sm-none d-md-block">-</td>
                                 <td><span class="bg-danger text-white rounded p-1">Non disponibile</span></td>
-                                <td>
+                                <td class="text-center">
                                     <button class="btn border border-dark-subtle me-1"><i
                                             class="bi bi-pencil-fill"></i></button>
                                     <button class="btn border border-dark-subtle"><i
@@ -129,7 +131,56 @@
                                 <td scope="row">Shining</td>
                                 <td class="d-none d-sm-none d-md-block">-</td>
                                 <td><span class="bg-success text-white rounded p-1">Disponibile</span></td>
-                                <td>
+                                <td class="text-center">
+                                    <button class="btn border border-dark-subtle me-1"><i
+                                            class="bi bi-pencil-fill"></i></button>
+                                    <button class="btn border border-dark-subtle"><i
+                                            class="bi bi-trash3-fill"></i></button>
+                                </td>
+                            </tr>
+                            <!-- Settima riga tabella-->
+                            <tr>
+                                <td scope="row">La divina commedia</td>
+                                <td class="d-none d-sm-none d-md-block">21/09/2023</td>
+                                <td><span class="bg-warning text-white rounded p-1">In Prestito</span></td>
+                                <td class="text-center">
+                                    <button class="btn border border-dark-subtle me-1"><i
+                                            class="bi bi-pencil-fill"></i></button>
+                                    <button class="btn border border-dark-subtle"><i
+                                            class="bi bi-trash3-fill"></i></button>
+                                </td>
+                            </tr>
+                            <!-- Ottava riga tabella -->
+                            <tr>
+                                <td scope="row">Il trono di spade</td>
+                                <td class="d-none d-sm-none d-md-block">-</td>
+                                <td><span class="bg-success text-white rounded p-1">Disponibile</span></td>
+                                <td class="text-center">
+                                    <button class="btn border border-dark-subtle me-1"><i
+                                            class="bi bi-pencil-fill"></i></button>
+                                    <button class="btn border border-dark-subtle"><i
+                                            class="bi bi-trash3-fill"></i></button>
+                                </td>
+                            </tr>
+                            <!-- Nona riga tabella -->
+                            <tr>
+                                <td scope="row">Il mondo di <span
+                                        class="badge text-primary bg-danger-subtle">Sofia</span></td>
+                                <td class="d-none d-sm-none d-md-block">-</td>
+                                <td><span class="bg-danger text-white rounded p-1">Non disponibile</span></td>
+                                <td class="text-center">
+                                    <button class="btn border border-dark-subtle me-1"><i
+                                            class="bi bi-pencil-fill"></i></button>
+                                    <button class="btn border border-dark-subtle"><i
+                                            class="bi bi-trash3-fill"></i></button>
+                                </td>
+                            </tr>
+                            <!-- Decima riga tabella-->
+                            <tr>
+                                <td scope="row">Le cronache di Marmoa: il leone, la strega e l'armadio</td>
+                                <td class="d-none d-sm-none d-md-block">25/07/2023</td>
+                                <td><span class="badge bg-warning text-white">In Prestito</span></td>
+                                <td class="text-center">
                                     <button class="btn border border-dark-subtle me-1"><i
                                             class="bi bi-pencil-fill"></i></button>
                                     <button class="btn border border-dark-subtle"><i
@@ -163,7 +214,7 @@
                                 <div class="list-group list-group-flush">
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">Come aggiungere un nuovo libro?
-                                            <a class="text-end">ciao</a>
+                                            <a class="">ciao</a>
                                         </li>
                                         <li class="list-group-item"><a href="">Come posso accedere all'anagrafica
                                                 utenti?</a></li>
